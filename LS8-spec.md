@@ -19,7 +19,7 @@
 * `IR`: Instruction Register, contains a copy of the currently executing instruction
 * `MAR`: Memory Address Register, holds the memory address we're reading or writing
 * `MDR`: Memory Data Register, holds the value to write or the value just read
-* `FL`: Flags, see below
+* `FL`: Flags, see below    
 
 
 ## Flags
@@ -157,6 +157,8 @@ Meanings of the bits in the first byte of each instruction: `AABCDDDD`
 * `B` 1 if this is an ALU operation
 * `C` 1 if this instruction sets the PC
 * `DDDD` Instruction identifier
+
+
 
 The number of operands `AA` is useful to know because the total number of bytes in any
 instruction is the number of operands + 1 (for the opcode). This
